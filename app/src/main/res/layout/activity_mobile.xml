@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10sp"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="right"
+                android:layout_marginTop="12sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:background="@drawable/logout"
+                    android:padding="10sp"
+                    android:id="@+id/logout"
+                    android:layout_marginRight="20sp"
+                    android:onClick="logout"
+
+               />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAPPHIRE PARK"
+                android:textSize="40sp"
+
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:textColor="#3f3f3f"
+                android:layout_marginTop="10sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number(10-digit only)"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#3f3f3f"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="10sp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:maxLength="10"
+                    android:textStyle="bold"
+                    android:padding="5sp"
+                    android:inputType="number"
+                    android:id="@+id/phonenumber"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADD VISITOR"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:background="@drawable/btn_admin"
+                    android:textColor="#ffffff"
+                    android:padding="10sp"
+                    android:id="@+id/button"
+                    android:onClick="addVisitor"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/serachVisitors"
+                    android:layout_width="0dp"
+                    android:layout_height="100sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="Search Visitor"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/btn_user"
+                    android:onClick="searchVisitor"
+                    android:padding="5sp"/>
+
+                <Button
+                    android:id="@+id/incorrectVisitors"
+                    android:layout_width="0dp"
+                    android:layout_height="100sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:text="Incorrect Visitors"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_user"
+                    android:textColor="#ffffff"
+                    android:onClick="incorrectVisitor"
+                    android:padding="5sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/searchVehicles"
+                    android:layout_width="0dp"
+                    android:layout_height="100sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:text="Search Vehicles"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/btn_user"
+                    android:textColor="#ffffff"
+                    android:onClick="searchVehicles"
+                    android:padding="5sp"
+                    />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/predefinedVisitors"
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="Predefined Visitors"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@drawable/btn_user"
+                android:onClick="predefinedVisitor"
+                android:padding="5sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/resident_register"
+                    android:layout_width="0dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_admin"
+                    android:gravity="center"
+                    android:onClick="residentRegistration"
+                    android:padding="5sp"
+                    android:text="Resident Registration"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/resident_access"
+                    android:layout_width="0dp"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10sp"
+                    android:textSize="18sp"
+                    android:text="Resident Access"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:visibility="gone"
+                    android:background="@drawable/btn_admin"
+                    android:onClick="residentAccess"
+                    android:padding="5sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+<include layout="@layout/footer"/>
+
+</LinearLayout>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_visitor_two"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mtech.com.visitortesting.AddVisitorTwo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <mtech.com.visitortesting.RoundedImageView
+                        android:id="@+id/visitorPhoto"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/profile" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Visitor's Photo"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit"
+                    android:onClick="editVP" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="25sp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="29dp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit"
+                        android:onClick="editName" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="0.5"
+                            android:text="Name"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/mobileNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_weight="0.5"
+                            android:text="**********"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="    "
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/idPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/edittext"
+
+                            android:gravity="center"
+                            android:onClick="visitorPhoto"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Photo Id"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit"
+                        android:onClick="editIDP" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:text="Please fill in following details"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:text="Flat No. or Owner Name(फ्लैट नं या मालिक का नाम)"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <!--<EditText-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="0.75"-->
+                    <!--android:hint="Flat No. or Owner Name"-->
+                    <!--/>-->
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/imageView"
+                        android:layout_alignStart="@+id/imageView"
+                        android:layout_below="@+id/imageView"
+                        android:layout_weight="0.75"
+                        android:completionThreshold="1"
+                        android:ems="10"
+
+                        android:hint="Flat No. or Owner Name(फ्लैट नं या मालिक का नाम)">
+
+                        <requestFocus />
+                    </AutoCompleteTextView>
+
+                    <Button
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:background="@drawable/close2"
+
+                        android:onClick="flatClose" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Vehicle Number(गाड़ी नं)"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="10sp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/one"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="2" />
+
+                        <EditText
+                            android:id="@+id/two"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:nextFocusForward="@+id/three" />
+
+                        <EditText
+                            android:id="@+id/three"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:gravity="center"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="2"
+                            android:nextFocusForward="@+id/four" />
+
+                        <EditText
+                            android:id="@+id/four"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint=""
+                            android:inputType="number"
+                            android:maxLength="4" />
+
+                        <Button
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:background="@drawable/close2"
+                            android:onClick="vehClose" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Total Visitors(कुल मुलाकाती)"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="10sp"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:id="@+id/totVisitors"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.60"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:gravity="left"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:text="1"
+                            android:textColor="#000" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="40sp"
+
+                            android:layout_height="40sp"
+                            android:background="@drawable/subtract"
+                            android:onClick="minus" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_marginLeft="5sp"
+                            android:background="@drawable/add"
+                            android:onClick="plus" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:text="From(कहाँ से)"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/from"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:hint="From(कहाँ से)" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="10sp"
+                        android:text="Purpose of Visit(आने का उद्देश )"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="10sp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/purpose"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edittext"
+                            android:gravity="center"
+                            android:padding="10dp" />
+                        <!--<Spinner-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:hint="Select Purpose"-->
+                        <!--android:gravity="left"-->
+                        <!--/>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:background="@drawable/btn_user"
+                    android:onClick="addVisitor"
+                    android:text="Add visitor( ऐड विजिटर )"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

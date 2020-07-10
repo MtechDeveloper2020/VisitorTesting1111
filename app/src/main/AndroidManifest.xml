@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mtech.com.visitortesting" >
+
+    <uses-sdk android:targetSdkVersion="21" />
+
+    <supports-screens android:resizeable="true" />
+    <supports-screens android:smallScreens="true" />
+    <supports-screens android:xlargeScreens="true" />
+    <supports-screens android:largeScreens="true" />
+    <supports-screens android:normalScreens="true" />
+    <supports-screens android:anyDensity="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- Uses permission for Internet -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/guard"
+        android:label="SecurityApp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddVisitorOne"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddVisitorTwo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchVisitors"
+            android:label="Search Visitors"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IncorrectVisitors"
+            android:label="Incorrect Visitor Entries( गलत विजिटर )"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchVehicles"
+            android:label="Search Owners Vehicle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SavedScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MobileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".BackgroundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".EmergrncyFlash" />
+        <activity android:name=".SOS" />
+        <activity android:name=".SocietyName">
+        </activity>
+        <activity android:name=".resident.ResidentRegistration">
+        </activity>
+        <activity android:name=".resident.ResidentAccess"></activity>
+        <service
+            android:name=".IncorrectService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".PredefinedVisitors"
+            android:label="Predefined Visitors"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

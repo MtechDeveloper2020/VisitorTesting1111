@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#bdbdbd"
+    android:layout_height="match_parent"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="VisitorName"
+                android:background="#bdbdbd"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="Flat No"
+                android:background="#bdbdbd"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+
+                />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Number"
+                android:background="#bdbdbd"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+
+                />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="In Time"
+                android:background="#bdbdbd"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</LinearLayout>

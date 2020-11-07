@@ -12,10 +12,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.ByteArrayOutputStream;
 
 public class AddVisitorOne extends Activity {
+
     private static final int CAMERA_REQUEST = 1890;
     private static final int CAMERA_REQUEST1 = 1891;
     TextView mobileNo;
@@ -59,7 +59,7 @@ public class AddVisitorOne extends Activity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         if (requestCode == CAMERA_REQUEST){
-            if (resultCode == RESULT_OK && data != null){
+            if (resultCode == RESULT_OK && data != null) {
 
                 visphoto = (Bitmap) data.getExtras().get("data");
                 visitorPhoto.setImageBitmap(visphoto);

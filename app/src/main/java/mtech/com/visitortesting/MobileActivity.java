@@ -19,11 +19,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 import mtech.com.visitortesting.resident.ResidentAccess;
 import mtech.com.visitortesting.resident.ResidentRegistration;
 
@@ -273,7 +271,6 @@ public class MobileActivity extends Activity {
                     } else {
                         startService(new Intent(this, BackgroundService.class));
                     }
-
                     //------------------------------------------------------------------
 
                 } else {
@@ -285,6 +282,7 @@ public class MobileActivity extends Activity {
             }
 
         } catch (Exception e) {
+
             e.printStackTrace();
             Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
         }
@@ -295,6 +293,7 @@ public class MobileActivity extends Activity {
             //  image.setImageBitmap(bmp);
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
+
                 @Override
                 public void run() {
                     Intent i = new Intent(MobileActivity.this, AddVisitorTwo.class);

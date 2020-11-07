@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/VisitorTesting.iml" filepath="$PROJECT_DIR$/VisitorTesting.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jtds-1.2.5/jtds-1.2.5.iml" filepath="$PROJECT_DIR$/jtds-1.2.5/jtds-1.2.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VisitorTesting.iml" filepath="$PROJECT_DIR$/VisitorTesting.iml" group="VisitorTesting" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="VisitorTesting/app" />
+      <module fileurl="file://$PROJECT_DIR$/jtds-1.2.5/jtds-1.2.5.iml" filepath="$PROJECT_DIR$/jtds-1.2.5/jtds-1.2.5.iml" group="VisitorTesting/jtds-1.2.5" />
     </modules>
   </component>
 </project>

@@ -54,14 +54,13 @@ public class SOS extends ActionBarActivity{
     }
     public void stop(View v){
         myPlayer.stop();
-
         new GetLongLat("E").execute();
     }
 
-    private void showName(ResultSet rs, ResultSet rs1, String flag){
+    private void showName(ResultSet rs, ResultSet rs1, String flag) {
         boolean status = false;
         try {
-            if (flag.equalsIgnoreCase("E")){
+            if (flag.equalsIgnoreCase("E")) {
                 try {
                     Toast.makeText(this, "Emergency OUT", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(this, MobileActivity.class);
@@ -70,7 +69,6 @@ public class SOS extends ActionBarActivity{
                 } catch (Exception e) {
                     e.toString();
                     Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show();
-
                 }
             }
         } catch (Exception e) {
